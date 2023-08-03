@@ -9,6 +9,8 @@ Files in the repository in the order of the project's process:
 1. Data_Cleaning.ipynb
 2. Data_Exploration.ipynb
 3. ML_Models.ipynb
-4. User_Input.ipynb
-5. index.html
-6. app.py
+4. model.pkl
+5. tf.pkl
+6. User_Input.ipynb
+7. index.html
+8. app.py
