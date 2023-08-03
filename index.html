@@ -6,13 +6,14 @@
 <body>
     <h1 style="text-align:center">Political Bias Analyzer</h1>
     <div style="text-align:center;" id = "intro-div">
-    	<p>Welcome to the Political Bias Analyzer! The predictions from this webapp are 
-    	generated using ensemble methods of stacking multiple machine learning models. The
-    	supervised learning classifiers used in the final stacking classifier include 
-    	logistic regression, random forest, support vector machine, multinomial naive 
-    	bayes, AdaBoost, and XGBoost. Features, or important words, are extracted using a 
-    	TFIDF Vectorizer, and the final stacking classifier is 79% accurate in its 
-    	predictions of news articles as Left, Center, or Right leaning.</p>
+    	<p>Welcome to the Political Bias Analyzer!</p> 
+    	<p>The predictions from this webapp are generated using ensemble methods of 
+    	stacking multiple machine learning models, and important words or features are 
+    	extracted using a TFIDF Vectorizer. The supervised learning classifiers used in 
+    	the final stacking classifier include logistic regression, random forest, support 
+    	vector machine, multinomial naive bayes, AdaBoost, and XGBoost. After hypertuning 
+    	parameters using GridSearchCV, the final stacking classifier is 79% accurate in 
+    	its predictions of news articles as Left, Center, or Right leaning.</p>
     	<form method="post">
         	<label for="url">To begin, please enter the URL of a news article:</label><br>
         	<input type="text" id="url" name="url" required><br>
@@ -51,7 +52,7 @@
         					<p>{{ bias_result[4] }}</p>
         				</div>
         				<div style="display:table-cell; padding:20px">
-        					<h2 style="text-align:center">Cleaned Words from Article Text:</h2>
+        					<h2 style="text-align:center">Cleaned Article Text:</h2>
         					<p>{{ bias_result[3] }}</p>
         				</div>
         			</div>
@@ -60,7 +61,7 @@
         {% elif bias_result[2] == None %}
         	<div style="text-align:center">
         		<h2>Error: Unable to access the text from the given URL</h2>
-        		<p>Possible reasons include subscription costs and pop-up windows.</p>
+        		<p>Possible reasons include subscription costs and pop-up windows</p>
         	</div>
         {% endif %}
     </div>
