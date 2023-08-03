@@ -1,6 +1,6 @@
 # Predicting-Political-Bias-with-ML-Algorithms
 
-The predictions from this webapp are generated using ensemble methods of stacking multiple machine learning models. The supervised learning classifiers used in the final stacking classifier include logistic regression, random forest, support vector machine, multinomial naive bayes, AdaBoost, and XGBoost. Features, or important words, are extracted using a TFIDF Vectorizer, and the final stacking classifier is 79% accurate in its predictions of news articles as Left, Center, or Right leaning.
+The predictions from this webapp are generated using ensemble methods of stacking multiple machine learning models, and important words or features are extracted using a TFIDF Vectorizer. The supervised learning classifiers used in the final stacking classifier include logistic regression, random forest, support vector machine, multinomial naive bayes, AdaBoost, and XGBoost. After hypertuning parameters using GridSearchCV, the final stacking classifier is 79% accurate in its predictions of news articles as Left, Center, or Right leaning.
 
 
 To run the web app:
