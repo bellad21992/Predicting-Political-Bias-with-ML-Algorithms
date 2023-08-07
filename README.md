@@ -5,8 +5,18 @@ The predictions from this webapp are generated using ensemble methods of stackin
 
 To run the web app:
 1. Download 'app.py', 'index.html', 'model.pkl', and 'tf.pkl'. Put all four of these files into the same folder, then put 'index.html' into it's own folder named "Templates". 
-2. Run 'app.py' in Terminal by navigating to the folder where the files are located, and typing "python app.py" into the terminal.
-3. Copy the link: "http://192.168.0.3:5000/" into your brower, and enter a URL of a political news article into the box to predict its political leaning!
+2. Make sure you have Python 3 installed on your computer. Next, install libaries/packages by typing the following commands into Terminal:
+* pip3 install joblib==1.2.0
+* pip3 install bs4==4.12.2
+* pip3 install contractions==0.1.73
+* pip3 install nltk==3.8.1
+* pip3 install spacy==3.5.3,
+* pip3 install scikit-learn==1.2.2
+* pip3 install flask==2.2.3
+* python -m spacy download en_core_web_sm
+* python -m nltk.downloader all
+4. In the Terminal, navigate to the folder where the four files are located, and type "python app.py" into the terminal to run the app.
+5. Copy the link: "http://192.168.0.3:5000/" into your brower, and enter a URL of a political news article into the box to predict its political leaning!
 
 
 Files in this repository:
