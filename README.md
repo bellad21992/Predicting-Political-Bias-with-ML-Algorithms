@@ -15,8 +15,9 @@ To run the web app:
 * pip3 install flask==2.2.3
 * python -m spacy download en_core_web_sm
 * python -m nltk.downloader all
-4. In the Terminal, navigate to the folder where the four files are located, and type "python app.py" into the terminal to run the app.
-5. Copy the link: "http://192.168.0.3:5000/" into your brower, and enter a URL of a political news article into the box to predict its political leaning!
+3. In the Terminal, navigate to the folder where the four files are located by typing "cd _____" with the path to your directory containing the four files in the blank.
+4. Type "python app.py" into the terminal to run the app.
+5. Copy the second link returned from the output: "http://192.168.0.3:5000/" into your brower, and enter a URL of a political news article into the box to predict its political leaning!
 
 
 Files in this repository:
